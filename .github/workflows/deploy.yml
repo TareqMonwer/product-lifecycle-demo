@@ -24,7 +24,7 @@ jobs:
       - name: Deploy to S3
         run: |
           if [ "${{ github.ref }}" == "refs/heads/dev" ]; then
-            aws s3 sync ./ s3://myapp-dev-bucket --delete
+            aws s3 sync ./ s3://dev-bucket-0-0-1 --delete
           elif [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            aws s3 sync ./ s3://myapp-prod-bucket --delete
+            aws s3 sync ./ s3://prod-bucket-0-0-1 --delete
           fi
