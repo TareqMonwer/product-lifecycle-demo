@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+      header {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+      main {
+        max-width: 700px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>About Us</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Our Mission</h2>
+        <p>
+          We aim to create simple, user‑friendly solutions that help people and
+          businesses achieve their goals.
+        </p>
+      </section>
+      <section>
+        <h2>Our Story</h2>
+        <p>
+          Founded in 2022, we started with a small team passionate about
+          technology and design. Today, we continue to grow while staying true
+          to our core values of simplicity and clarity.
+        </p>
+      </section>
+      <section>
+        <h2>Our Team</h2>
+        <p>
+          We are a group of dedicated professionals who believe in the power of
+          collaboration and creativity.
+        </p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Email: hello@example.com</p>
+      </section>
+    </main>
+    <footer>&copy; <span id="y"></span> Your Company Name</footer>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
